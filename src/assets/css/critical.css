@@ -273,9 +273,6 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-345 .cs-topper {
-    color: var(--primaryLight);
-  }
   body.dark-mode #services-345 .cs-title,
   body.dark-mode #services-345 .cs-text,
   body.dark-mode #services-345 .cs-h3,

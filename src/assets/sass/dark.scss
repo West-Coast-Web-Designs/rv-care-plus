@@ -41,4 +41,9 @@
   .dark {
     display: none;
   }
+
+  .cs-topper {
+    color: var(--secondary);
+    background-color: var(--secondaryOpaque);
+  }
 }
