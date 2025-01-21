@@ -8,13 +8,23 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #ffba19;
-        --primaryLight: #ffd675;
-        --secondary: #001f3f;
-        --secondaryLight: #001f3f;
+        --primary: #1d4e89;
+        --primaryDark: #1c395e;
+        --secondary: #f41e1e;
+        --secondaryDark: #a90b0b;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
+        --light: #f0f0f0;
+        --lighter: #f7f7f7;
+        --white: #ffffff;
+        --grayLighter: #ebebeb;
+        --grayLight: #888888;
+        --gray: #4f4f4f;
+        --grayDark: #27272a;
+        --shadow: 12px 12px 24px -0px rgba(26, 26, 26, 0.08);
+        --borderRoundedSm: 0.25rem;
+        --borderRounded: 0.5rem;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
