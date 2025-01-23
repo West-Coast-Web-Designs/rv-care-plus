@@ -8,12 +8,15 @@
 @media only screen and (min-width: 0rem) {
   // Website colors
   :root {
-    --primaryOpaque: rgba(29, 78, 137, 0.2);
-    --primary: #1d4e89;
-    --primaryDark: #1c395e;
-    --secondaryOpaque: rgba(244, 30, 30, 0.2);
-    --secondary: #f41e1e;
-    --secondaryDark: #a90b0b;
+    --primaryOpaque: rgba(244, 30, 30, 0.2);
+    --primary: #f41e1e;
+    --primaryDark: #a90b0b;
+    --secondaryOpaque: rgba(255, 238, 219, 0.2);
+    --secondary: #ffeedb;
+    --secondaryDark: #fdb474;
+    --tertiaryOpaque: rgba(99, 159, 171, 0.2);
+    --tertiary: #639fab;
+    --tertiaryDark: #3f6d7b;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -41,7 +44,7 @@
 
   // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
   .cs-topper {
-    display: block;
+    display: inline;
     margin-bottom: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;

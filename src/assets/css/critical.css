@@ -247,6 +247,9 @@
   body.dark-mode #services-345 .cs-picture {
     background-color: var(--secondaryOpaque);
   }
+  body.dark-mode #services-345 .cs-icon {
+    filter: invert(1);
+  }
   body.dark-mode #services-345 .cs-item {
     position: relative;
     transition: background-color 0.3s, transform 0.3s;

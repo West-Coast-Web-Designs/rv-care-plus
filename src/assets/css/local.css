@@ -214,168 +214,305 @@
   }
 }
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---      Why Choose Us         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-r {
+  #why-choose-1634 {
     padding: var(--sectionPadding);
   }
-  #sbs-r .cs-container {
+  #why-choose-1634 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* 48px - 100px */
+    gap: clamp(3rem, 10vw, 6.25rem);
+  }
+  #why-choose-1634 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #why-choose-1634 .cs-flex {
+    max-width: 38.5rem;
+  }
+  #why-choose-1634 .cs-title {
+    max-width: 20ch;
+  }
+  #why-choose-1634 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #why-choose-1634 .cs-text:last-of-type {
+    margin-bottom: 0;
+  }
+  #why-choose-1634 .cs-wrapper {
+    width: 100%;
+  }
+  #why-choose-1634 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 1.75rem;
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2.3vw, 1.25rem);
+  }
+  #why-choose-1634 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    grid-column: span 12;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 3vw, 1.5rem);
+  }
+  #why-choose-1634 .cs-icon-wrapper {
+    /* 60px - 80px */
+    width: clamp(3.75rem, 7vw, 5rem);
+    height: clamp(3.75rem, 7vw, 5rem);
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid var(--primary);
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    max-width: 80rem;
-    width: 100%;
-    row-gap: 2.5rem;
-  }
-  #sbs-r .cs-left {
     position: relative;
-    height: 39.75em;
-    /* using ems so we can use font size to scale the whole section */
-    width: 39.4375em;
-    /* scaling the font size with the view width */
-    font-size: min(2.31vw, 0.7em);
+    /* prevents flexbox from squishing it */
+    flex: none;
   }
-  #sbs-r .cs-picture {
-    position: absolute;
+  #why-choose-1634 .cs-icon {
+    width: 2rem;
+    height: auto;
     display: block;
-    border-radius: 1.5em;
-    /* clips img tag corners */
-    overflow: hidden;
   }
-  #sbs-r .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* makes image act like a background image */
-    object-fit: cover;
+  #why-choose-1634 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--headerColor);
+    text-align: inherit;
   }
-  #sbs-r .cs-picture1 {
-    top: 0;
-    right: 0;
-    height: 36.3125em;
-    width: 32.625em;
-  }
-  #sbs-r .cs-picture2 {
-    bottom: 0;
-    left: 0;
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-    background-color: #fff;
-    height: 25em;
-    width: 25.875em;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-  }
-  #sbs-r .cs-right {
-    margin: auto;
-    max-width: 33.875rem;
-  }
-  #sbs-r .cs-topper {
-    margin-bottom: 0.25rem;
-    text-align: left;
-  }
-  #sbs-r .cs-title {
-    max-width: 50rem;
-    text-align: left;
-  }
-  #sbs-r .cs-text {
-    margin-bottom: 1rem;
-    max-width: 46.875rem;
-    text-align: left;
-  }
-  #sbs-r .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #sbs-r .cs-flex-group {
-    position: relative;
-    border-radius: 1rem;
-    background-color: #f7f7f7;
-    /* 16px - 32px */
-    padding: clamp(1rem, 3vw, 2rem);
-  }
-  #sbs-r .cs-flex-p {
-    margin: 0 0 1rem;
+  #why-choose-1634 .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
-    color: #353535;
+    margin: 0;
+    color: var(--bodyTextColor);
+    text-align: inherit;
   }
-  #sbs-r .cs-name {
-    display: block;
-    margin: 0 0 0.25rem;
-    text-transform: uppercase;
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: bold;
-    color: var(--headerColor);
+  #why-choose-1634 .cs-wrapper {
+    /* makes the contents of this container act as though the container doesn't exist. They are now children of the cs-container so they can be positioned around each other. This allows us to sue the order property to place the cs-image-group at the top of the page on mobile */
+    display: contents;
   }
-  #sbs-r .cs-job {
-    display: block;
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    color: #353535;
+  #why-choose-1634 .cs-image-group {
+    font-size: min(2.7vw, 1em);
+    width: 36.5em;
+    height: 30.875em;
+    /* sends it to teh top in the 1st position */
+    order: -1;
+    position: relative;
+    z-index: 1;
   }
-  #sbs-r .cs-quote-icon {
+  #why-choose-1634 .cs-picture-wrapper {
+    width: 80.073801%;
+    height: 83.805668%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
     position: absolute;
-    bottom: 0rem;
-    /* 16px - 32px */
-    right: clamp(1rem, 4vw, 2rem);
-    height: auto;
-    /* 60px - 136px */
-    width: clamp(3.75rem, 10vw, 8.5rem);
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  #why-choose-1634 .cs-box {
+    width: 60%;
+    margin-top: -2.375em;
+    margin-left: 1.5em;
+    padding: 1em;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25em;
+    position: relative;
+    z-index: 10;
+  }
+  #why-choose-1634 .cs-header {
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #why-choose-1634 .cs-desc {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--primary);
+    display: block;
+  }
+  #why-choose-1634 .cs-picture {
+    position: relative;
+    z-index: 1;
+  }
+  #why-choose-1634 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #why-choose-1634 .cs-picture1 {
+    width: 100%;
+    height: 100%;
+  }
+  #why-choose-1634 .cs-picture2 {
+    width: 36.346863%;
+    height: 39.878543%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbs-r .cs-container {
-    flex-flow: row;
-    justify-content: space-between;
-    gap: 3.25rem;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-1634 .cs-container {
+    max-width: 80rem;
   }
-  #sbs-r .cs-left {
-    /* sends it to the right */
-    order: 2;
-    font-size: min(1.2vw, 1em);
+  #why-choose-1634 .cs-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-1634 .cs-flex {
+    text-align: left;
+    width: 40vw;
+    max-width: 40rem;
     flex: none;
   }
-  #sbs-r .cs-right {
+  #why-choose-1634 .cs-title {
     margin: 0;
+  }
+  #why-choose-1634 .cs-h3,
+  #why-choose-1634 .cs-item-text {
+    text-align: left;
+  }
+  #why-choose-1634 .cs-item {
+    grid-column: span 4;
+  }
+  #why-choose-1634 .cs-image-group {
+    width: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose-1634 {
+    /* set the darker background color on the main div */
+    background-color: #f8f5f1;
+    overflow: hidden;
+  }
+  #why-choose-1634 .cs-content {
+    align-items: flex-start;
+  }
+  #why-choose-1634 .cs-flex {
+    width: 50%;
+  }
+  #why-choose-1634 .cs-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #why-choose-1634 .cs-wrapper:before {
+    /* make the white space dependant on the height of the cs-wrapper as a pseudo element attached to the cs wrapper. This makes the white background responsive to the amount of items you have in your list. When the list grows or shrinks, the design will maintain its same spacing */
+    content: "";
+    width: 100vw;
+    height: 100vw;
+    background: #fff;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  #why-choose-1634 .cs-card-group {
+    max-width: 39.375rem;
+    /* use padding to push add the same amount of space between the content and the top of the card group as the negative margin top value on the cs-image-group. This makes sure that it counter acts the effects of the negative margin affecting the card group as well */
+    padding-top: 3rem;
+    align-self: flex-start;
+  }
+  #why-choose-1634 .cs-image-group {
+    width: 33.875em;
+    /* by setting height to auto, it will stretch to fill the container height. So when you add or subtract more cards and change the height of the container, the image group will shrink as well. Thats why we set the heights of the images in percentages. They will always be X% tall inside the cs-image-group. So when the image group stretches to match the container height, the pictures percentage height also grows proportionally. This ensures the design responds to changes in height from the card section on the left. */
+    height: auto;
+    min-height: 30.875em;
+    /* makes it overlap the .cs-wrapper div */
+    margin-top: -3em;
+    order: 2;
+    flex: none;
+  }
+  #why-choose-1634 .cs-item {
+    grid-column: span 12;
+    flex-direction: row;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs-r .cs-left:before, body.dark-mode #sbs-r .cs-left:after {
-    background: var(--accent);
+  body.dark-mode #why-choose-1634 {
+    background-color: rgba(0, 0, 0, 0.3);
   }
-  body.dark-mode #sbs-r .cs-picture2 {
-    /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-    background-color: var(--dark);
-  }
-  body.dark-mode #sbs-r .cs-topper {
-    color: var(--primaryLight);
-  }
-  body.dark-mode #sbs-r .cs-title,
-  body.dark-mode #sbs-r .cs-text,
-  body.dark-mode #sbs-r .cs-h3,
-  body.dark-mode #sbs-r .cs-flex-p,
-  body.dark-mode #sbs-r .cs-name {
+  body.dark-mode #why-choose-1634 .cs-title,
+  body.dark-mode #why-choose-1634 .cs-text,
+  body.dark-mode #why-choose-1634 .cs-h3,
+  body.dark-mode #why-choose-1634 .cs-item-text,
+  body.dark-mode #why-choose-1634 .cs-header {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-r .cs-flex-group {
-    background-color: var(--accent);
-  }
-  body.dark-mode #sbs-r .cs-job {
+  body.dark-mode #why-choose-1634 .cs-text,
+  body.dark-mode #why-choose-1634 .cs-item-text {
     opacity: 0.8;
-    color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-r .cs-quote-icon {
+  body.dark-mode #why-choose-1634 .cs-box {
+    background-color: var(--dark);
+    position: relative;
+    z-index: 1;
+  }
+  body.dark-mode #why-choose-1634 .cs-box:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
     opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  body.dark-mode #why-choose-1634 .cs-wrapper:before {
+    background-color: var(--dark);
   }
 }
 /*-- -------------------------- -->

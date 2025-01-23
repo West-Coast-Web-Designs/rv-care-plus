@@ -36,14 +36,14 @@
     .dark {
       display: block !important;
     }
+
+    .cs-topper {
+      color: var(--secondaryDark);
+      background-color: var(--secondaryOpaque);
+    }
   }
 
   .dark {
     display: none;
-  }
-
-  .cs-topper {
-    color: var(--secondary);
-    background-color: var(--secondaryOpaque);
   }
 }
