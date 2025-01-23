@@ -344,7 +344,8 @@
       height: clamp(3.75rem, 7vw, 5rem);
       margin: 0;
       box-sizing: border-box;
-      border: 1px solid var(--primary);
+      background-color: var(--tertiaryOpaque);
+      border-radius: var(--borderRounded);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -508,7 +509,7 @@
 @media only screen and (min-width: 64rem) {
   #why-choose-1634 {
     /* set the darker background color on the main div */
-    background-color: #f8f5f1;
+    background-color: var(--tertiaryDark);
     overflow: hidden;
 
     .cs-content {
@@ -533,7 +534,7 @@
         content: "";
         width: 100vw;
         height: 100vw;
-        background: #fff;
+        background: var(--white);
         opacity: 1;
         position: absolute;
         display: block;
@@ -542,6 +543,19 @@
         z-index: -1;
         transform: translateX(-50%);
       }
+    }
+
+    .cs-title {
+      color: var(--white);
+    }
+
+    .cs-text {
+      color: var(--white);
+    }
+
+    .cs-topper {
+      color: var(--white);
+      background-color: var(--secondaryOpaque);
     }
 
     .cs-card-group {

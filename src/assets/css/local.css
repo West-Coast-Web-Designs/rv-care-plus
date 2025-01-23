@@ -285,7 +285,8 @@
     height: clamp(3.75rem, 7vw, 5rem);
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid var(--primary);
+    background-color: var(--tertiaryOpaque);
+    border-radius: var(--borderRounded);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,7 +426,7 @@
 @media only screen and (min-width: 64rem) {
   #why-choose-1634 {
     /* set the darker background color on the main div */
-    background-color: #f8f5f1;
+    background-color: var(--tertiaryDark);
     overflow: hidden;
   }
   #why-choose-1634 .cs-content {
@@ -448,7 +449,7 @@
     content: "";
     width: 100vw;
     height: 100vw;
-    background: #fff;
+    background: var(--white);
     opacity: 1;
     position: absolute;
     display: block;
@@ -456,6 +457,16 @@
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
+  }
+  #why-choose-1634 .cs-title {
+    color: var(--white);
+  }
+  #why-choose-1634 .cs-text {
+    color: var(--white);
+  }
+  #why-choose-1634 .cs-topper {
+    color: var(--white);
+    background-color: var(--secondaryOpaque);
   }
   #why-choose-1634 .cs-card-group {
     max-width: 39.375rem;
