@@ -348,7 +348,7 @@ eleventyNavigation:
             type="image/jpeg" />
           <img
             src="{% getUrl '/assets/images/profile.jpg' | resize({ width: 1260 , height: 1360  }) | jpeg %}"
-            alt="Joseph"
+            alt="Armando"
             width="630"
             height="680"
             loading="lazy"
@@ -457,43 +457,78 @@ eleventyNavigation:
         <div class="cs-image-group">
           <div class="cs-picture-wrapper">
             <picture class="cs-picture cs-picture1">
-              <!--Mobile Image-->
               <source
                 media="(max-width: 600px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg" />
-              <!--Tablet and above Image-->
+                srcset="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 936, height: 750, position: 'attention' }) | avif %}"
+                type="image/avif" />
+              <source
+                media="(max-width: 600px)"
+                srcset="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 936, height: 750, position: 'attention' }) | webp %}"
+                type="image/webp" />
+              <source
+                media="(max-width: 600px)"
+                srcset="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 936, height: 750, position: 'attention' }) | jpeg %}"
+                type="image/jpeg" />
+              <!--Tablet and up Image-->
               <source
                 media="(min-width: 601px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg" />
+                srcset="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 868, height: 750, position: 'attention' }) | avif %}"
+                type="image/avif" />
+              <source
+                media="(min-width: 601px)"
+                srcset="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 868, height: 750, position: 'attention' }) | webp %}"
+                type="image/webp" />
+              <source
+                media="(min-width: 601px)"
+                srcset="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 868, height: 750, position: 'attention' }) | jpeg %}"
+                type="image/jpeg" />
               <img
                 loading="lazy"
                 decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting9.jpg"
-                alt="meeting"
+                src="{% getUrl '/assets/images/rv-service-02.jpg' | resize({ width: 868, height: 750, position: 'attention' }) | webp %}"
+                alt="rv service"
                 width="434"
                 height="414" />
             </picture>
             <div class="cs-box">
-              <span class="cs-header">Attorney Growth</span>
-              <span class="cs-desc">Aqestic recusandae lauda </span>
+              <span class="cs-header">Armando De La Garzwa</span>
+              <span class="cs-desc">Expert Service Technician</span>
             </div>
           </div>
           <picture class="cs-picture cs-picture2">
+            <source
+                media="(max-width: 600px)"
+                srcset="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 424, height: 394, position: 'attention' }) | avif %}"
+                type="image/avif" />
+              <source
+                media="(max-width: 600px)"
+                srcset="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 424, height: 394, position: 'attention' }) | webp %}"
+                type="image/webp" />
+              <source
+                media="(max-width: 600px)"
+                srcset="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 424, height: 394, position: 'attention' }) | jpeg %}"
+                type="image/jpeg" />
+              <!--Tablet and up Image-->
+              <source
+                media="(min-width: 601px)"
+                srcset="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 394, height: 394, position: 'attention' }) | avif %}"
+                type="image/avif" />
+              <source
+                media="(min-width: 601px)"
+                srcset="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 394, height: 394, position: 'attention' }) | webp %}"
+                type="image/webp" />
+              <source
+                media="(min-width: 601px)"
+                srcset="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 394, height: 394, position: 'attention' }) | jpeg %}"
+                type="image/jpeg" />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="{% getUrl '/assets/images/rv-service-01.jpg' | resize({ width: 394, height: 394, position: 'attention' }) | webp %}"
+                alt="rv service"
+                width="197"
+                height="197" />
             <!--Mobile Image-->
-            <source
-              media="(max-width: 600px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg" />
-            <!--Tablet and above Image-->
-            <source
-              media="(min-width: 601px)"
-              srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg" />
-            <img
-              loading="lazy"
-              decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/computer.jpg"
-              alt="on computer"
-              width="197"
-              height="197" />
           </picture>
         </div>
       </div>

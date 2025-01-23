@@ -4,7 +4,7 @@
     "semi": true,
     "printWidth": 120,
     "bracketSameLine": true,
-    "plugins": ["prettier-plugin-jinja-template"],
+ 
     "overrides": [
         {
             "files": ["*.html"],

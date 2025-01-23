@@ -345,7 +345,9 @@
     margin-top: -2.375em;
     margin-left: 1.5em;
     padding: 1em;
-    background-color: #f7f7f7;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: var(--borderRounded);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -365,7 +367,7 @@
     font-size: 0.875em;
     line-height: 1.5em;
     margin: 0;
-    color: var(--primary);
+    color: var(--bodyTextColor);
     display: block;
   }
   #why-choose-1634 .cs-picture {
@@ -379,6 +381,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: var(--borderRounded);
   }
   #why-choose-1634 .cs-picture1 {
     width: 100%;
@@ -492,7 +495,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #why-choose-1634 {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--tertiaryDarker);
   }
   body.dark-mode #why-choose-1634 .cs-title,
   body.dark-mode #why-choose-1634 .cs-text,
@@ -514,13 +517,16 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: #000;
+    background: var(--accent);
     opacity: 0.2;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: -1;
+  }
+  body.dark-mode #why-choose-1634 .cs-desc {
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #why-choose-1634 .cs-wrapper:before {
     background-color: var(--dark);
