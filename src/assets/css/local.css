@@ -834,7 +834,7 @@
   }
   body.dark-mode #services-1629 .cs-icon {
     /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   body.dark-mode #services-1629 .cs-title,
   body.dark-mode #services-1629 .cs-text,
