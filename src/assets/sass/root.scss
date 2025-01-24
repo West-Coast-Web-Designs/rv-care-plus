@@ -30,6 +30,7 @@
     --gray: #4f4f4f;
     --grayDark: #27272a;
     --shadow: 12px 12px 24px -0px rgba(26, 26, 26, 0.08);
+    --shadowLg: 10px 18px 37px 0px rgba(0, 0, 0, 0.75);
     --borderRoundedSm: 0.25rem;
     --borderRounded: 0.5rem;
 
@@ -45,7 +46,7 @@
 
   // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
   .cs-topper {
-    display: inline;
+    display: inline-block;
     margin-bottom: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
