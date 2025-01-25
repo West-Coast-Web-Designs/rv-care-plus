@@ -14,6 +14,8 @@ eleventyNavigation:
 {% block head %}
   <link rel="stylesheet" href="/assets/css/local.css" />
   <link rel="stylesheet" href="/assets/css/critical.css" />
+  <link rel="stylesheet" href="/assets/css/contact-form.css" />
+  <script src="/assets/js/file-upload.js" defer></script>
 
   <!-- Script for Netlify Identity -->
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -741,80 +743,72 @@ eleventyNavigation:
   <!--                   Reviews                    -->
   <!-- ============================================ -->
 
-  <section id="reviews">
+  <section id="reviews-607">
     <div class="cs-container">
-      <span class="cs-topper">Our Reviews</span>
-      <h2 class="cs-title">Words From Our Customers</h2>
-      <p class="cs-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl.
-        Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare.
-        Lorem ipsum dolor sit amet.
-      </p>
+      <div class="cs-content">
+        <span class="cs-topper">Testimonials</span>
+        <h2 class="cs-title">What Our Customers Are Saying</h2>
+        <p class="cs-text">
+          At RV Care Plus, we’re dedicated to providing top-quality service wherever you are. Don’t just take our word
+          for it—read what our happy customers have to say about their experiences with our fast, reliable RV repairs!
+        </p>
+      </div>
       <ul class="cs-card-group">
-        <!-- Review 1 -->
         <li class="cs-item">
           <img
-            class="cs-item-img"
+            class="cs-icon"
+            src="/assets/icons/quotes.svg"
+            alt="quote icon"
             aria-hidden="true"
+            width="40"
+            height="38"
             loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-            alt="profile picture"
-            width="80"
-            height="80" />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna
-            pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra
-            massa urna, volutpat orci imperdiet eget eget.
+            decoding="async" />
+          <h3 class="cs-h3">Quick and Reliable Service</h3>
+          <p class="cs-item-text">
+            "RV Care Plus saved our trip! They came to our campsite and fixed our water heater quickly. The technician
+            was friendly, knowledgeable, and professional. Highly recommend their services!"
           </p>
-          <span class="cs-reviewer">
-            Jon Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
-          <img
-            class="cs-item-stars"
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16" />
+          <span class="cs-name">Michael T.</span>
         </li>
-        <!-- Review 2 -->
         <li class="cs-item">
           <img
-            class="cs-item-img"
+            class="cs-icon"
+            src="/assets/icons/quotes.svg"
+            alt="quote icon"
             aria-hidden="true"
+            width="40"
+            height="38"
             loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-            alt="profile picture"
-            width="80"
-            height="80" />
-          <p class="cs-item-p">
-            Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna
-            pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra
-            massa urna, volutpat orci imperdiet eget eget.
+            decoding="async" />
+          <h3 class="cs-h3">Thorough and Professional</h3>
+          <p class="cs-item-text">
+            "Exceptional service! They inspected our RV thoroughly and caught a roof issue we hadn’t noticed. The repair
+            was done on the spot, and now we feel confident hitting the road again. Thank you, RV Care Plus!"
           </p>
-          <span class="cs-reviewer">
-            Jane Doe
-            <span class="cs-desc">Homeowner</span>
-          </span>
+          <span class="cs-name">Sarah L.</span>
+        </li>
+
+        <li class="cs-item">
           <img
-            class="cs-item-stars"
+            class="cs-icon"
+            src="/assets/icons/quotes.svg"
+            alt="quote icon"
             aria-hidden="true"
+            width="40"
+            height="38"
             loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-            alt="stars"
-            width="96"
-            height="16" />
+            decoding="async" />
+          <h3 class="cs-h3">Top-Notch Every Time</h3>
+          <p class="cs-item-text">
+            "I’ve used RV Care Plus twice, and they’ve been fantastic both times. From fixing my AC to cleaning out my
+            tanks, their work is top-notch. It’s great knowing they come to you—worth every penny!"
+          </p>
+          <span class="cs-name">Tom R.</span>
         </li>
       </ul>
-      <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
     </div>
   </section>
 
-  {% include 'components/cta.html' %}
+  {% include 'components/contact-form.html' %}
 {% endblock %}
