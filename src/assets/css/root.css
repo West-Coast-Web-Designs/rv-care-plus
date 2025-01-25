@@ -391,7 +391,7 @@
   }
   #cs-navigation .cs-logo {
     width: auto;
-    height: 4.5rem;
+    height: 4rem;
     margin: 0 auto 0 0;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
@@ -683,7 +683,7 @@
   #cs-navigation .cs-logo {
     width: auto;
     max-width: 12.3125rem;
-    height: 5.5rem;
+    height: 4.5rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;
