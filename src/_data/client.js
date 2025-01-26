@@ -8,8 +8,7 @@ module.exports = {
         state: "Colorado",
     },
     socials: {
-        facebook: "https://www.facebook.com/",
-        instagram: "https://www.instagram.com/",
+        facebook: "https://www.facebook.com/profile.php?id=100084356192175",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://rvcareplusrvservices.com/",
