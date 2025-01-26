@@ -1,134 +1,106 @@
 ---
-title: "About | Code Stitch Web Designs"
-description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
+title: "Mobile RV Repair, Vancouver WA | Mobile RV Response | About Us"
+description: "Learn about Mobile RV Repair, located in Vancouver, WA, serving Southwest Washington and Northwest Oregon. Discover our commitment to expert mobile RV maintenance, quality repairs, and exceptional customer care."
 permalink: "about/"
+page:
+  title: About Us
 eleventyNavigation:
-    key: About Us
-    order: 200
+  key: About Us
+  order: 100
 ---
 
 {% extends "layouts/base.html" %}
-
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css" />
+  <link rel="stylesheet" href="/assets/css/content.css" />
+  <link
+    rel="preloadImg"
+    href="{% getUrl '/assets/images/profile.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+    as="image" />
+  <link
+    rel="preloadImg"
+    href="{% getUrl '/assets/images/profile.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+    as="image" />
 {% endblock %}
-
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+  {% include 'components/banner.html' %}
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
+  <!-- ============================================ -->
+  <!--                 Content Page                 -->
+  <!-- ============================================ -->
+
+  <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+  <section id="content-page-1532">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <picture class="cs-background">
+          <!--Tablet and above Image-->
+          <source
+            media="(max-width: 1024px)"
+            srcset="{% getUrl '/assets/images/profile.jpg' | resize({ width: 712 , height:898  }) | avif %}"
+            type="image/avif" />
+          <source
+            media="(max-width: 1024px)"
+            srcset="{% getUrl '/assets/images/profile.jpg' | resize({ width: 712 , height:898  }) | webp %}"
+            type="image/webp" />
+          <source
+            media="(max-width: 1024px)"
+            srcset="{% getUrl '/assets/images/profile.jpg' | resize({ width: 712 , height:898  }) | jpeg %}"
+            type="image/jpeg" />
+          <!--Desktop Image-->
+          <source
+            media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/profile.jpg' | resize({ width:1024 , height:1080  }) | avif %}"
+            type="image/avif" />
+          <source
+            media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/profile.jpg' | resize({ width:1024 , height:1080  }) | webp %}"
+            type="image/webp" />
+          <source
+            media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/profile.jpg' | resize({ width:1024 , height:1080  }) | jpeg %}"
+            type="image/jpeg" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src="{% getUrl '/assets/images/profile.jpg' | resize({ width:1024 , height:1080  }) | jpeg %}"
+            alt="Joseph"
+            width="522"
+            height="540" />
         </picture>
-    </section>
+      </div>
+      <div class="cs-content">
+        <h1 class="cs-title">About RV Care Plus</h1>
+        <p>
+          At RV Care Plus, we know that your RV is more than just a vehicle—it’s your home, your comfort, and your
+          sanctuary. Based in Colorado Springs, we specialize in mobile RV repair, bringing expert care directly to you,
+          whether your RV is stationary or on the move.
+        </p>
+        <p>
+          Our owner, Armando, is deeply passionate about repairing RVs and providing exceptional service to his
+          customers. With a strong commitment to quality and attention to detail, he approaches every job with care,
+          ensuring your RV remains a safe, comfortable, and functional space.
+        </p>
+        <p>
+          Whether you live in your RV full-time, use it seasonally, or need occasional maintenance, RV Care Plus is here
+          to meet your needs. From routine checkups to urgent repairs, we focus on delivering reliable, on-site
+          solutions tailored to your situation.
+        </p>
+        <p>
+          Thank you for trusting RV Care Plus to care for your home and investment. We’re proud to serve our community
+          and help keep your RV in top condition.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
-        </div>
-    </section>
-
-    {% include 'components/cta.html' %}
+  {% include 'components/cta.html' %}
 {% endblock %}
