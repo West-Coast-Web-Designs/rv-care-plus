@@ -6,10 +6,11 @@
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Contact Us</span>
-      <h2 class="cs-title">Get in Touch</h2>
+      <h2 class="cs-title">Get in Touch with RV Care Plus</h2>
       <p class="cs-text">
-        Get in touch with Mobile RV Response for expert on-site RV repair and maintenance. We're here to keep your RV in
-        top shape—contact us today to schedule your service!
+        We’re here to help with all your RV repair and maintenance needs in Colorado Springs and surrounding areas.
+        Whether you need a quick repair, regular maintenance, or have questions about our services, we’re just a call or
+        email away!
       </p>
       <ul class="cs-ul">
         <li class="cs-li">
@@ -50,7 +51,7 @@
             <a href="mailto:{{ client.email }}" class="cs-link">{{ client.email }}</a>
           </div>
         </li>
-        {#
+
         <li class="cs-li">
           <picture class="cs-icon-wrapper">
             <img
@@ -64,10 +65,9 @@
           </picture>
           <div class="cs-flex-group">
             <span class="cs-header">Current Service Area</span>
-            <span>{{client.location.city}}, {{client.location.state}} and surrounding areas</span>
+            <span>{{ client.location.city }}, {{ client.location.state }} and surrounding areas</span>
           </div>
         </li>
-        #}
       </ul>
     </div>
     <!--Form-->
