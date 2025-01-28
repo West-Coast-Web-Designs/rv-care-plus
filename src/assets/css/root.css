@@ -807,6 +807,7 @@
     align-items: center;
     min-height: 30vh;
     padding-top: 3.125rem;
+    margin-top: 80px;
   }
   #int-hero picture {
     z-index: -2;
@@ -828,7 +829,7 @@
     position: relative;
     margin: 0 auto;
     margin-top: 4.375rem;
-    margin-bottom: 1.875rem;
+    margin-bottom: 3rem;
     max-width: 31.25rem;
     width: 96%;
     font-size: 2.1333333333rem;

@@ -986,6 +986,8 @@
     align-items: center;
     min-height: 30vh;
     padding-top: calc(50 / 16 * 1rem);
+    // height of fixed navigation
+    margin-top: 80px;
 
     picture {
       z-index: -2;
@@ -1009,7 +1011,7 @@
       position: relative;
       margin: 0 auto;
       margin-top: calc(70 / 16 * 1rem);
-      margin-bottom: calc(30 / 16 * 1rem);
+      margin-bottom: calc(48 / 16 * 1rem);
       max-width: calc(500 / 16 * 1rem);
       width: 96%;
       font-size: calc(64 / 30 * 1rem);
