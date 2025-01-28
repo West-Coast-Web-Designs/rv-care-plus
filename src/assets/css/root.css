@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --primaryOpaque: rgba(244, 30, 30, 0.2);
+    --primaryOpaquer: rgba(244, 30, 30, 0.1);
     --primary: #cd0808;
     --primaryDark: #a90b0b;
     --secondaryOpaque: rgba(255, 238, 219, 0.2);

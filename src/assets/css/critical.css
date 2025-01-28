@@ -191,7 +191,7 @@
     box-sizing: border-box;
     border-radius: var(--borderRounded);
     border: 1px solid var(--primary);
-    background-color: var(--primaryOpaque);
+    background-color: var(--primaryOpaquer);
     display: flex;
     justify-content: center;
     align-items: center;
