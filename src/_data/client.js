@@ -1,8 +1,8 @@
 module.exports = {
     name: "RV Care Plus",
     email: "rvcareplus@gmail.com",
-    phoneForTel: "719-310-2052",
-    phoneFormatted: "(719) 310-2052",
+    phoneForTel: "719-373-1090",
+    phoneFormatted: "(719) 373-1090",
     location: {
         city: "Colorado Springs",
         state: "Colorado",
