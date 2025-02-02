@@ -229,9 +229,7 @@
     }
 
     .cs-section-description {
-      p {
-        margin-bottom: 1rem;
-      }
+      margin-bottom: 1.5rem;
     }
 
     .cs-price__header {
@@ -244,6 +242,10 @@
         margin-bottom: 0px;
         margin-right: 0.5rem;
       }
+    }
+
+    .cs-price-section {
+      width: 100%;
     }
 
     .cs-price__container {
