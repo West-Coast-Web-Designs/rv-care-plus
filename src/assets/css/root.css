@@ -885,7 +885,7 @@
 @media only screen and (min-width: 0rem) {
   #cta-697 {
     padding: var(--sectionPadding);
-    background-color: var(--gray);
+    background-color: var(--tertiaryDark);
     position: relative;
     z-index: 1;
   }
@@ -936,7 +936,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cta-697 {
-    background-color: var(--medium);
+    background-color: var(--tertiaryDarker);
   }
 }
 /*-- -------------------------- -->
