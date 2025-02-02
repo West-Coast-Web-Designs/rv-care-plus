@@ -89,7 +89,7 @@
 
     h3 {
       font-size: calc(24 / 16 * 1rem);
-      color: var(--primary);
+      // color: var(--primary);
     }
 
     h4,
@@ -117,9 +117,9 @@
       width: 100%;
       margin: 0 0 calc(16 / 16 * 1rem) 0;
       color: var(--bodyTextColor);
-      &:last-of-type {
-        margin-bottom: calc(32 / 16 * 1rem);
-      }
+      // &:last-of-type {
+      //   margin-bottom: calc(32 / 16 * 1rem);
+      // }
 
       a {
         font-size: inherit;
@@ -138,6 +138,11 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
+      // Remove margin in nested lists
+      & > ul {
+        margin-bottom: 0px;
+      }
     }
 
     ul {
@@ -221,6 +226,56 @@
       height: 1px;
       background-color: var(--bodyTextColor);
       margin: calc(32 / 16 * 1rem) 0;
+    }
+
+    .cs-section-description {
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .cs-price__header {
+      display: flex;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      align-items: baseline;
+
+      h4 {
+        margin-bottom: 0px;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .cs-price__container {
+      margin-bottom: 1rem;
+      width: 100%;
+      p {
+        margin-left: 0.5rem;
+        margin-bottom: 0px;
+      }
+    }
+
+    .cs-price {
+      flex-grow: 1;
+      text-align: right;
+      display: flex;
+      font-weight: 700;
+
+      &::before {
+        content: "";
+        background: repeating-linear-gradient(
+          to right,
+          currentColor,
+          currentColor 1px,
+          transparent 2px,
+          transparent 4px
+        );
+        height: 1px;
+        flex-grow: 1;
+        display: inline-block;
+        margin-top: 1em;
+        margin-right: 0.5rem;
+      }
     }
   }
 }
