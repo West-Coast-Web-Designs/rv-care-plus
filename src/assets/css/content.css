@@ -294,6 +294,9 @@
   body.dark-mode #content-page-1532 .cs-divider {
     background-color: var(--bodyTextColorWhite);
   }
+  body.dark-mode #content-page-1532 .cs-price {
+    color: var(--bodyTextColorWhite);
+  }
 }
 
 /*# sourceMappingURL=content.css.map */
